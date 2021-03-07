@@ -1,0 +1,39 @@
+server:
+    port: 2333
+    address: 0.0.0.0
+lavalink:
+    server:
+        password: "pw"
+        sources:
+            youtube: true
+            bandcamp: false
+            soundcloud: false
+            twitch: false
+            vimeo: false
+            mixer: false
+            http: false
+            local: false
+        bufferDurationMs: 400
+        youtubePlaylistLoadLimit: 1
+        youtubeSearchEnabled: true
+        soundcloudSearchEnabled: false
+        gc-warnings: true
+
+metrics:
+    prometheus:
+        enabled: false
+        endpoint: /metrics
+        
+
+sentry:
+    dsn: ""
+    
+loggin:
+    file:
+        max-history: 30
+        max-size: 1GB
+    path: ./logs/
+    
+level:
+    root: INFO
+    lavalink: INFO
